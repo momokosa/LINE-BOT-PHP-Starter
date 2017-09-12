@@ -1,5 +1,5 @@
 <?php
-$access_token = 'xb5NIe+AmHsUw6aoq34PCfh7BcMvLmnBLSfChxMQ9FWEP+nFEHJa0ruMwlAsbN7mx+pvjWtI9XJfqJQMXo2fPtwjrz9CAYU3QCByxlGfxJd7chzoK5epq5iz8kmVk7skET1SylofkmY4ZWkwtAcol5gdB04t89/1O/w1cDnyilFU=';
+$access_token = 'b5NIe+AmHsUw6aoq34PCfh7BcMvLmnBLSfChxMQ9FWEP+nFEHJa0ruMwlAsbN7mx+pvjWtI9XJfqJQMXo2fPtwjrz9CAYU3QCByxlGfxJd7chzoK5epq5iz8kmVk7skET1SylofkmY4ZWkwtAcol5gdB04t89/1O/w1cDnyilFU=';
 
 // $url = 'https://api.line.me/v1/oauth/verify';
 $url = 'https://api.line.me/v2/oauth/verify';
@@ -16,7 +16,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,$fields);
+// curl_setopt($ch, CURLOPT_POSTFIELDS,$fields);
 $result = curl_exec($ch);
 curl_close($ch);
 
