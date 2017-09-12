@@ -4,13 +4,14 @@ $access_token = 'b5NIe+AmHsUw6aoq34PCfh7BcMvLmnBLSfChxMQ9FWEP+nFEHJa0ruMwlAsbN7m
 // $url = 'https://api.line.me/v1/oauth/verify';
 $url = 'https://api.line.me/v2/oauth/verify';
 
-// $headers = array('Authorization: Bearer ' . $access_token);
-$headers = array('Content-Type: application/x-www-form-urlencoded');
+$headers = array('Authorization: Bearer ' . $access_token);
+// $headers = array('Content-Type: application/x-www-form-urlencoded');
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+// curl_setopt($ch, CURLOPT_POST, 1);
 $result = curl_exec($ch);
 curl_close($ch);
 
