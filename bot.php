@@ -27,6 +27,10 @@ if (!is_null($events['events'])) {
                 send_reply($replyToken, $messages);
             }else {
                 $text = 'พิพม์ไรมาอ่ะ(fire) ลองพิพม์ -help ดูสิ';
+                $messages = [
+    				'type' => 'text',
+    				'text' => $text
+    			];
                 send_reply($replyToken, $messages);
             }
 		}
