@@ -45,5 +45,6 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "I am a Notto<br>";
-echo json_encode($events);
+echo "json_encode=>".json_encode($events)."<br>";
+echo "content=>".$content;
 ?>
