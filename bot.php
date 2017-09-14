@@ -1,5 +1,5 @@
 <?php
-include("func.php");
+require("func.php");
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -27,6 +27,7 @@ if (!is_null($events['events'])) {
                 send_reply($replyToken, $messages);
             }else {
                 $text = 'พิพม์ไรมาอ่ะ(fire) ลองพิพม์ -help ดูสิ';
+                send_reply($replyToken, $messages);
             }
 		}
 	}
