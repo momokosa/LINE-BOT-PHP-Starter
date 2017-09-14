@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
             if($text == '-help'){
-                $text = '0x100096 คุณสามารถพิพม์คำสั่งดังต่อไปนี้\n -คิดเลข\n -แนะนำ';
+                $text = 'คุณสามารถพิพม์คำสั่งดังต่อไปนี้\n-คิดเลข\n-แนะนำ';
 
                 // Build message to reply back
     			$messages = [
